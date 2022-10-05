@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "imageUrls": "/image/main_banner_1.png",
+    "text": "첫번째 슬라이드 버튼",
+    "alt": "첫번째 슬라이드"
+  },
+  {
+    "id": "2",
+    "imageUrls": "/image/main_banner_2.png",
+    "text": "두번째 슬라이드 버튼",
+    "alt": "두번째 슬라이드"
+  }
+]
