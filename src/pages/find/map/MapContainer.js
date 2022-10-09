@@ -27,10 +27,9 @@ const MapContainer = ({ searchPlace }) => {
           displayMarker(data[i]);
           bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
         }
-        // 검색된 장소 위치를 기준으로 지도 범위를 재설정
-        map.setBounds(bounds);
       }
     }
+
     // 지도에 마커를 표시하는 함수
     function displayMarker(place) {
       // 마커를 생성하고 지도에 표시
@@ -52,7 +51,11 @@ const MapContainer = ({ searchPlace }) => {
     }
   }, [searchPlace]);
 
-  return <div id="myMap" style={{ width: "600px", height: "500px" }}></div>;
+  return (
+    <div>
+      <div id="myMap" style={{ width: "600px", height: "500px" }}></div>
+    </div>
+  );
 };
 
 export default MapContainer;

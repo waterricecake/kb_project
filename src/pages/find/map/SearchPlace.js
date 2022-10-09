@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MapContainer from "./MapContainer";
+import MapList from "./MapList";
 import "./SearchPlace.scss";
 
 const SearchPlace = () => {
@@ -18,6 +19,8 @@ const SearchPlace = () => {
 
   return (
     <>
+      {" "}
+      <MapList />
       <div className="mapContainer">
         <div className="mapInputContainer">
           <form className="mapInputForm" onSubmit={handleSubmit}>
