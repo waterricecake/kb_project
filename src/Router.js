@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Nav from "./components/nav/Nav.js";
-import ChatBot from "./components/chatbot/ChatBot";
+import ChatBotContainer from "./components/chatbot/ChatBotContainer";
 import Footer from "./components/footer/Footer";
 
 import Main from "./pages/main/Main";
@@ -43,6 +43,7 @@ function Router() {
         <Route path="/find" element={<Find />} />
         <Route path="/predict" element={<Predict />} />
       </Routes>
+      <ChatBotContainer />
       <Footer />
     </BrowserRouter>
   );
