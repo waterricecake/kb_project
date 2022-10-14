@@ -45,6 +45,7 @@ function Router() {
         <Route path="/predict" element={<Predict />} />
         <Route path="/predict_result" element={<PredictResult />} />
       </Routes>
+      <ChatBot />
       <Footer />
     </BrowserRouter>
   );

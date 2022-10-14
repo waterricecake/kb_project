@@ -4,7 +4,7 @@ import "./Main.scss";
 
 function Main() {
   const [currentCarousel, setCurrentCarousel] = useState("");
-  const TOTAL_SLIDES = 2; //슬라이드 개수 2면 3개 1이면 2개
+  const TOTAL_SLIDES = 3; //슬라이드 개수 2면 3개 1이면 2개
   const slideRef = useRef(null);
   const nextCarousel = () => {
     if (currentCarousel >= TOTAL_SLIDES) {
@@ -25,7 +25,7 @@ function Main() {
     }
   };
   useEffect(() => {
-    slideRef.current.style.transition = "all 0.5s ease-in-out";
+    slideRef.current.style.transition = "all 0.3s ease-in-out";
     slideRef.current.style.transform = `translateX(-${currentCarousel}00%)`; // 백틱을 사용하여 슬라이드로 이동하는 에니메이션을 만듭니다.
   }, [currentCarousel]);
   return (
@@ -35,6 +35,7 @@ function Main() {
           <Image className="mainBox" src="image/main_banner_1.png" />
           <Image className="mainBox" src="image/main_banner_2.png" />
           <Image className="mainBox" src="image/main_banner_3.png" />
+          <Image className="mainBox" src="image/main_banner_4.png" />
         </div>
         <div className="mainBannerButtonContainer">
           <button
